@@ -1,0 +1,138 @@
+<div id="fb-root"></div>
+<script>
+    setSmooth(true);
+	setRegion("US-Fremont");
+</script>
+<div id="overlays"
+     style="display:none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 200;">
+	 <div id="helloDialog">
+	        <div id="leftsidebox">
+			<center>
+				<img src="/100.png">
+			</center>
+		</div>
+			<div id="rightsidebox">
+            <center>
+                <div id="sideboxcontent" style="margin-top: 2px; margin-bottom: 2px;">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Google Ads ==지우지마세요== -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8825593113199975"
+     data-ad-slot="5639912844"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				<center>
+				<iframe width="290" height="197.5" src="https://www.youtube.com/embed/bXlSOvj0LpI" frameborder="0" allowfullscreen></iframe>
+			</center>
+		</div>
+        </div>
+        <form role="form">
+            <div class="form-group">
+                <div style="float: left; margin-left: 20px;"><h2><img src="logo.png"></h2></div>
+                <br clear="both"/>
+            </div>
+            <div class="form-group">
+                <input id="nick" class="form-control" placeholder="닉네임을 입력하세요" maxlength="15"/>
+                <br clear="both"/>
+            </div>
+            <!-- location Unknown -->
+            <div>
+                <div class="text-muted region-message CN-China">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                <button type="submit" id="playBtn"
+                        onclick="setNick(document.getElementById('nick').value); return false;"
+                        class="btn btn-play btn-primary btn-needs-server">Play
+                </button>
+				<button onclick="$('#settings, #instructions').toggle();return false;"
+                        class="btn btn-info btn-settings"><i class="glyphicon glyphicon-cog"></i></button>
+				<br clear="both"/>
+				</div>
+                <div id="settings" class="checkbox" style="display:none;">
+                <div class="form-group" id="mainform">
+
+				</div>
+                <div style="margin: 6px;">
+                    <label><input type="checkbox" onchange="setSkins(!$(this).is(':checked'));"> 스킨숨기기</label>
+                    <label><input type="checkbox" onchange="setNames(!$(this).is(':checked'));"> 이름숨기기</label>
+                    <label><input type="checkbox" onchange="setColors($(this).is(':checked'));"> 색깔숨기기</label>
+                    <label><input type="checkbox" onchange="setShowMass($(this).is(':checked'));" checked> 스코어보이기</label>
+                    <label><input type="checkbox" onchange="setHideChat($(this).is(':checked'));"> 채팅숨기기</label>
+                    <label><input type="checkbox" onchange="setDarkTheme($(this).is(':checked'));" checked> 어두운테마</label>
+                    <label><input type="checkbox" onchange="setSmooth($(this).is(':checked'));" checked> 부드러운 테마</label>
+                </div>
+            </div>
+        </form>
+				    <p></p>
+               <a href="http://cafe.naver.com/ArticleList.nhn?search.clubid=27983720&search.menuid=74&search.boardtype=L" class="btn-primary btn btn-success" role="button" target="_blank">무료스킨 등록</a>
+               <a href="/rules.html" class="btn-primary btn btn-danger" role="button" target="_blank">게임규정</a>
+               <a href="http://cafe.naver.com/agario" class="btn-primary btn btn-info" role="button" target="_blank">카페로 이동</a>
+               <button id="spectateBtn" onclick="spectate(); return false;" class="btn btn-warning btn-spectate btn-needs-server">관전하기
+               <p></p>
+               </div>
+        <div id="instructions">
+            <hr/>
+            <center><span class="text-muted">
+<a href="http://cafe.naver.com/agario"><b>Agar.io Korea Server</b><br/></a>
+쾌적한 환경에서 한국 유저들과 함께 아가리오를 즐겨보세요!<br>
+E-mail 문의 메일: info@agark.kr<br>
+<br>
+<a href="http://cafe.naver.com/protocodyne" target="_blank"><img src="/hello1.png"></a>
+</span></center>
+        </div>
+        <center>
+		    <hr/>
+            <center>
+    <span class="text-muted">
+       </span>
+            </center>
+            <div>
+            </div>
+            <small class="text-muted text-center"></small>
+        </center>
+        {{#if links}}
+            <hr style="margin-bottom: 7px; "/>
+            <div style="margin-bottom: 5px; line-height: 32px; margin-left: 6px; height: 32px;">
+                <center>
+                    <footer class='text-center'>
+                        {{#each links}}
+                            {{#unless @first}}|{{/unless}}
+                            <a href='http://cafe.naver.com/agario' class='text-muted'>한국서버</a>
+                        {{/each}}
+                    </footer>
+                </center>
+            </div>
+        {{/if}}
+
+    </div>
+</div>
+<div id="connecting"
+     style="display:none;position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 100; background-color: rgba(0,0,0,0.5);">
+    <div style="width: 350px; background-color: #FFFFFF; margin: 100px auto; border-radius: 15px; padding: 5px 15px 5px 15px;">
+        <h2>연결중입니다!</h2>
+
+        <p> 현재 서버가 리붓중이거나 당신은 벤을 당하셨습니다. (새로고침을 하시거나 <a href="http://cafe.naver.com/agario">카페</a>를 확인해주세요.)
+    </div>
+</div>
+<canvas id="canvas" width="800" height="600"></canvas>
+<input type="text" id="chat_textbox" maxlength="200"/>
+
+<div style="font-family:'Ubuntu'">&nbsp;</div>
+
+<script type="text/javascript">
+    $('input').keypress(function(e) {
+        if (e.which == '13') {
+            e.preventDefault();
+            if (!isSpectating)
+                setNick(document.getElementById('nick').value);
+        }
+    });
+</script>
+<img src="/mini-map.png" width="200" height="200" alt="Position" id="imgpos">
+<script src="minimap.js"></script>

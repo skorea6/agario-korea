@@ -6,8 +6,7 @@
 ![image](https://user-images.githubusercontent.com/13993684/116969709-ae854f00-acf1-11eb-861b-1f73deb46ffd.png)
 
 # 유튜브 플레잉
-<iframe width="956" height="538" src="https://www.youtube.com/embed/jhdU6nvrpXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://www.youtube.com/embed/jhdU6nvrpXA)
+https://www.youtube.com/watch?v=jhdU6nvrpXA
 
 # 아가리오 게임 서버란?
 * 아가리오는 세포 분열 게임입니다. 

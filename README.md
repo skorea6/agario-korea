@@ -34,3 +34,9 @@
 
 # 플레잉 사진
 ![image](https://user-images.githubusercontent.com/13993684/116969884-fc9a5280-acf1-11eb-903c-01434ede5cc0.png)
+
+
+# 네이버 기사
+- 기사 URL: https://sports.news.naver.com/news.nhn?oid=356&aid=0000009102
+
+![image](https://user-images.githubusercontent.com/13993684/118402468-f1a5d180-b6a4-11eb-8d58-14e605a38855.png)

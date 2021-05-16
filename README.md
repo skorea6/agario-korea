@@ -6,7 +6,7 @@
 ![image](https://user-images.githubusercontent.com/13993684/116969709-ae854f00-acf1-11eb-861b-1f73deb46ffd.png)
 
 # 유튜브 플레잉
-https://www.youtube.com/watch?v=jhdU6nvrpXA
+- https://www.youtube.com/watch?v=jhdU6nvrpXA (출처: 유튜버 요밥님)
 
 # 아가리오 게임 서버란?
 * 아가리오는 세포 분열 게임입니다. 

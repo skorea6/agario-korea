@@ -5,6 +5,10 @@
 이 프로젝트는 제가 해왔던 프로젝트 중에서 가장 인기가 많았고, 당시 한국에서 .io 게임(인터넷 윕게임) 1위를 차지하였던 프로젝트입니다.
 ![image](https://user-images.githubusercontent.com/13993684/116969709-ae854f00-acf1-11eb-861b-1f73deb46ffd.png)
 
+# 유튜브 플레잉
+<iframe width="956" height="538" src="https://www.youtube.com/embed/jhdU6nvrpXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://www.youtube.com/embed/jhdU6nvrpXA)
+
 # 아가리오 게임 서버란?
 * 아가리오는 세포 분열 게임입니다. 
 처음 시작할때 일정한 양의 세포를 주는데, 다른 유저의 세포를 먹으면서 자신의 세포를 키우는 게임입니다.
